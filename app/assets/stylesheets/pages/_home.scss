@@ -1,4 +1,9 @@
 // Specific CSS for your home-page
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -26,10 +31,16 @@
   grid-gap: 16px;
 }
 
+.cards a {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
+    color: white;
   }
 }
 
@@ -37,6 +48,7 @@
 @media (min-width: 576px) {
   .cards {
     grid-template-columns: 1fr;
+    color: white;
   }
 }
 
@@ -44,6 +56,7 @@
 @media (min-width: 768px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+    color: white;
   }
 }
 
@@ -51,6 +64,8 @@
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+
   }
 }
 
@@ -58,5 +73,6 @@
 @media (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+    color: white;
   }
 }
