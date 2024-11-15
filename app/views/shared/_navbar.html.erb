@@ -1,0 +1,13 @@
+<nav class="navbar navbar-light bg-light">
+  <div>
+  <a class="navbar-brand m-4" href="/lists">
+    <img src="https://cdn-icons-png.flaticon.com/512/2798/2798007.png" width="50" height="50" alt="popcorn icon">
+  </a>
+  </div>
+  <div>
+    <ul class="list-inline m-4">
+      <li class="list-inline-item"><%= link_to "My Lists", lists_path %></li>
+      <li class="list-inline-item"><%= button_to 'Add a new list', new_list_path, method: :get, class: 'btn btn-success' %></li>
+    </ul>
+  </div>
+</nav>
